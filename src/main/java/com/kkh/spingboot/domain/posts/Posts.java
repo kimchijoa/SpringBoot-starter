@@ -1,5 +1,6 @@
 package com.kkh.spingboot.domain.posts;
 
+import com.kkh.spingboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,10 +13,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
 @Getter
-@Setter
 @NoArgsConstructor // 파라미터가 없는 기본 생성자 생성
 @Entity //테이블과 링크될 클래스임을 명시
-public class Posts {
+public class Posts extends BaseTimeEntity {
     @javax.persistence.Id
     @Id //PK 필드 명시
     @GeneratedValue(strategy = GenerationType.IDENTITY) //PK 생성 규칙 나타냄
@@ -36,11 +36,11 @@ public class Posts {
         this.author = author;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+
+    //Update 용
+    public void update(String title, String content) {
+        this.title = title;
+        this.content = content;
     }
 
-    public Long getId() {
-        return id;
-    }
 }
