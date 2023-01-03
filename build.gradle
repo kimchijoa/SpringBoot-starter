@@ -28,6 +28,7 @@ dependencies {
     implementation 'org.projectlombok:lombok' //lombok
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa' //JPA 버젼 관리
     implementation 'com.h2database:h2' // 인메모리 관계형 데이터베이스
+    implementation 'org.springframework.boot:spring-boot-starter-mustache' //mustache 추가
 //    testImplementation("junit:junit:4.13.2")
 //    testRuntimeOnly("org.junit.vintage:junit-vintage-engine")
 }
