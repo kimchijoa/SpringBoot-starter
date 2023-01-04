@@ -7,10 +7,10 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Entity
-@NoArgsConstructor
 @Getter
-public class User {
+@NoArgsConstructor
+@Entity
+public class User extends BaseTimeEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -49,8 +49,8 @@ public class User {
         this.id = id;
     }
 
-    @Id
-    public Long getId() {
-        return id;
-    }
+//    @Id
+//    public Long getId() {
+//        return id;
+//    }
 }
