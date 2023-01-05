@@ -30,7 +30,8 @@ dependencies {
     implementation 'com.h2database:h2' // 인메모리 관계형 데이터베이스
     implementation 'org.springframework.boot:spring-boot-starter-mustache' //mustache 추가
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client' // 소셜 로그인 등 클라이언트 입장에서 소셜 기능 구현시 필요함
-    //implementation 'org.springframework.session:spring-session-jdbc' //session부분만 jdbc를 통해 별도의 DB에 저장
+    implementation 'org.springframework.session:spring-session-jdbc' //session부분만 jdbc를 통해 별도의 DB에 저장
+    implementation 'org.mariadb.jdbc:mariadb-java-client' //마리아 DB 사용
     //implementation group: 'org.javassist', name: 'javassist' , version: '3.25.0-GA' // Security 추가 이후 bean 에러 해결용
 //    testImplementation("junit:junit:4.13.2")
 //    testRuntimeOnly("org.junit.vintage:junit-vintage-engine")
