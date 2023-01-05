@@ -24,7 +24,7 @@ dependencies {
     runtimeOnly 'org.projectlombok:lombok'
     runtimeOnly 'org.springframework.boot:spring-boot-devtools' //developmentOnly
     annotationProcessor 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    //testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'org.projectlombok:lombok' //lombok
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa' //JPA 버젼 관리
     implementation 'com.h2database:h2' // 인메모리 관계형 데이터베이스
