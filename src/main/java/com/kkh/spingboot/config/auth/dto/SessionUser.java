@@ -3,8 +3,10 @@ package com.kkh.spingboot.config.auth.dto;
 import com.kkh.spingboot.domain.user.User;
 import lombok.Getter;
 
+import java.io.Serializable;
+
 @Getter
-public class SessionUser {
+public class SessionUser implements Serializable { //세션 저장하는 부분에서 에러 발생
     private String name;
     private String email;
     private String picture;
