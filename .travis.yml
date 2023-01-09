@@ -36,7 +36,7 @@ deploy:
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
     bucket: springbootbuild #S3 bucket
-    key: SpingBoot.zip #project folder
+    key: springboot-webservice.zip #project folder
     bundle_type: zip
     application: springboot-web-service #codedeploy application
     deployment_group: springboot-web-service-group #codedeploy deploygroup
