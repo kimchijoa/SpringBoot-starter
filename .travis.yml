@@ -37,10 +37,11 @@ deploy:
     bucket: springbootbuild
     key: springboot-webservice.zip
     bundle_type: zip
-    application: springboot-web-service
-    deployment_group: springboot-web-service-group
+    application: springboot-web-service #codedeploy application
+    deployment_group: springboot-web-service-group #codedeploy deploygroup
     region: ap-northeast-2
     wait-until-deployed: true
+
 #CI finish send to email
 notifications:
   email:
