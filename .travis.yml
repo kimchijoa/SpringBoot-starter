@@ -31,11 +31,12 @@ deploy:
     local_dir: deploy
     wait-until-deployed: true
 
+
   - provider: codedeploy
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
-    bucket: springbootbuild
-    key: springboot-webservice.zip
+    bucket: springbootbuild #S3 bucket
+    key: SpingBoot.zip #project folder
     bundle_type: zip
     application: springboot-web-service #codedeploy application
     deployment_group: springboot-web-service-group #codedeploy deploygroup
